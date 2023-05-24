@@ -1,37 +1,86 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a2e;
+}
 
 .container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
+  animation: fadeIn 1s;
+  background-color: #162447;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
+  width: 400px;
+  color: #fff;
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  color: #e43f5a;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .form {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 label {
   display: block;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
-input {
+select,
+input[type="number"] {
+  padding: 10px;
+  border: 2px solid #1f4068;
+  background: #1b1b2f;
+  border-radius: 4px;
   width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
+  font-size: 16px;
+  color: #e43f5a;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e43f5a;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform .2s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ef5777;
+  transform: scale(1.1);
+}
+
+.output {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #0b0b0b;
+  border-radius: 10px;
+  text-align: left;
+  color: #e43f5a;
+  border-left: 5px solid #e43f5a;
 }
 
 .hidden {
   display: none;
-}
-
-.output {
-  background-color: #f9f9f9;
-  padding: 10px;
-  margin-bottom: 10px;
 }
