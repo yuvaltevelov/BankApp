@@ -1,0 +1,37 @@
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.output {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+}
